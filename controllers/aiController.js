@@ -58,8 +58,8 @@ ${text}`
                 return res.status(400).json({ message: "Invalid action" })
         }
 
-        // Get the generative model - using gemini-1.5-flash (free tier)
-        const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" })
+        // Get the generative model - using gemini-1.5-flash-latest (free tier)
+        const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-latest" })
 
         // Generate content
         const result = await model.generateContent(prompt)
